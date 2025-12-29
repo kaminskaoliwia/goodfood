@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #6E91DD;
+    background-color: #3A6929;
+
+}
+
+main {
+    position: relative;
+}
+
+.cofnij {
+    position: absolute;
+    text-decoration: none;
+    color:#31333F;
+    font-size: 50px;
+    margin: 0;
+}
+
+.cofnij:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+h1 {   
+    font-size: 7vw;
+    font-weight: 800;
+    margin: 10px;
+    margin-top: 10px;
+    color: #6E91DD;
+}
+
+h2 {
+    font-size: 5vw;
+    font-weight: 800;
+    margin: 10px;
+    color: #3A6929;
+}
+
+h4 {
+    position: absolute;
+    left: 50%;
+    font-size: 10px;
+    font-weight: 800;
+    text-align: center;
+    color: #31333F;
+    margin: 0;
+}
+
+form {
+background-color: #DC92B1;
+color:#3A6929;
+border-radius: 10px;
+max-width: 900px; 
+margin-left: auto;
+margin-right: auto;
+padding: 8px;
+z-index: 1;}
+
+label  {
+    display: block;
+    font-weight: bold;
+    padding: 12px 20px;
+
+}
+
+input[type=text] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0px;
+display: flex;
+border: 1px solid #3A6929;
+border-radius: 15px;
+background-color: #DC92B1;}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;          
+}
+
+.checkbox-item {
+    font-weight: 100;   
+  display: block;
+  cursor: pointer;
+  margin: 8px;
+  padding: 12px 20px;
+  border-radius: 10px; 
+  background-color: #d289a8;
+  border: 1px solid#3A6929;
+
+}
+
+.checkbox-item:hover {
+    background-color: #DC92B1;
+}
+
+textarea {
+font-family:Arial, Helvetica, sans-serif;
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0px;
+display: flex;
+border: 1px solid #3A6929;
+border-radius: 15px;
+background-color: #DC92B1;}
+
+.stars
+{
+    padding: 8px;
+    border: 1px solid #3A6929;
+    background-color: #d289a8;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+
+.star {
+    display: none;
+}
+
+.star-label:before {
+    content: url('star-before.png');
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.star:checked + .star-label::before {
+    content: url('star-after.png');
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    background-color: #3A6929;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button {
+    background-color: #3A6929;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button:hover {
+ opacity: 0.8;
+}
+
+
+footer {
+    color: #3A6929;
+}
