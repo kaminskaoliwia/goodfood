@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goodfood-formularz</title>
+    <link rel="stylesheet" href="style_formularz.css">
+    <link rel="shortcut icon" href="ikona.png">
+</head>
+<body>
+<canvas id="konfetti"></canvas>
+    <header>
+        <h4>goodfood</h4>
+        <a class="cofnij" href="strona_glowna.html">←</a>
+        <br>
+        <br>
+        <h1>co polecasz?</h1>
+        <br>
+        <br>
+    </header>
+    <main>
+<form id='form' action="">
+    <div>
+        <label class="label">nazwa miejsca</label>
+        <input type="text" placeholder="wpisz nazwe..." name="name" required>
+
+        <label class="label">adres</label>
+        <input type="text" placeholder="wpisz adres..." name="adres">
+
+        <label class="label">rodzaj miejsca</label>
+        <div class="checkbox-group">
+
+        <label class="checkbox-item">
+        <input type="checkbox"> restauracja 
+        </label>
+
+        <label class="checkbox-item">
+        <input type="checkbox"> street food
+        </label>
+
+        <label class="checkbox-item">
+        <input type="checkbox"> kawiarnia 
+        </label>
+
+        <label class="checkbox-item">
+        <input type="checkbox"> bar
+        </label>
+
+        <label class="checkbox-item">
+        <input type="checkbox"> inne
+        </label>
+
+        </div>
+
+        <label class="label">dokładniejszy opis</label>
+        <textarea placeholder="co ci się tam podoba?"></textarea>
+
+        <label class="label">jak oceniasz to miejsce</label>
+        
+        <div class = "stars">
+
+        <input type="checkbox" id="star1" class="star">
+        <label for="star1" class="star-label"></label>
+        
+        <input type="checkbox" id="star2" class="star">
+        <label for="star2" class="star-label"></label>
+
+        <input type="checkbox" id="star3" class="star">
+        <label for="star3" class="star-label"></label>
+
+        <input type="checkbox" id="star4" class="star">
+        <label for="star4" class="star-label"></label>
+
+        <input type="checkbox" id="star5" class="star">
+        <label for="star5" class="star-label"></label>
+
+        </div>
+
+        <div class="button">
+        <button type="submit" id="wyslij">wyślij!</button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script> 
+        <script src="konfetti.js"></script>
+
+    </div>
+</form>
+</main>
+    <footer>
+        <p>&copy 2025 goodfood.pl</p>
+    </footer>
+    </body>
+</html>

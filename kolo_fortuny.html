@@ -7,9 +7,60 @@
     <link rel="stylesheet" href="style_kolo_fortuny.css">
     <link rel="shortcut icon" href="ikona.png">
 </head>
+    <header>
+        <h4>goodfood</h4>
+        <a class="cofnij" href="strona_glowna.html">←</a>
+        <br>
+        <br>
+        <h1>nie wiesz co zjeść?</h1>
+        <h2>pomożemy z wyborem...</h2>
+        <br>
+        <br>
+    </header>
 <body>
-<h4>Kolo fortuny</h4>
-        <script src="kolo_fortuny.js"> </script>
+
+    <div class="triangle-container">
+    <img src="triangle.png" alt="trójkąt">
+    </div>
+    
+    <div class="kolo-container">
+    <img src="kolo.png" alt="kolo fortuny" id="obrazek-kola"></img>
+    </div>
+
+    <div class="button-container">
+    <button onclick="kolo()">Zakręć kołem!</button>  
+    </div> 
+
+    <div class = "wynik-container">
+    <h3 id="wynik"></h3>
+    </div>
+
+<script>
+    function kolo() {
+    const obrazek = document.getElementById("obrazek-kola");
+    const wynikTekst = document.getElementById("wynik");
+    obrazek.classList.add("animacja-kola");
+
+    wynikTekst.innerHTML = "Losowanie...";
+
+    setTimeout(() => {
+        const restauracje = [
+            "Poco Loco", "Mandu", "Vegan AF Ramen", "HEVRE", 
+            "Roll & Go Sushi", "Miski na Lea", "Miso Place", 
+            "Mazaya", "Hanguk Bistro Korean Bowl", "Italo", 
+            "Zapiekanki Krakowski Piecyk", "Kinki Ramen", 
+            "Placek Wolnica", "Bar Uniwersytecki"
+        ];
+
+        let randIndex = Math.floor(Math.random() * restauracje.length);
+        let message = restauracje[randIndex];
+
+        wynikTekst.innerHTML = `Wylosowałeś restaurację: <strong>${message}</strong>`;
+
+        obrazek.classList.remove("animacja-kola");
+    }, 2000) }
+
+</script>
 </body>
     <footer>
         <p>&copy 2025 goodfood.pl</p>
