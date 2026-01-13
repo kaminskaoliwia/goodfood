@@ -28,7 +28,7 @@
     </div>
 
     <div class="button-container">
-    <button onclick="kolo()">Zakręć kołem!</button>  
+    <button onclick="kolo()">zakręć kołem!</button>  
     </div> 
 
     <div class = "wynik-container">
@@ -41,7 +41,7 @@
     const wynikTekst = document.getElementById("wynik");
     obrazek.classList.add("animacja-kola");
 
-    wynikTekst.innerHTML = "Losowanie...";
+    wynikTekst.innerHTML = "losowanie...";
 
     setTimeout(() => {
         const restauracje = [
@@ -55,7 +55,7 @@
         let randIndex = Math.floor(Math.random() * restauracje.length);
         let message = restauracje[randIndex];
 
-        wynikTekst.innerHTML = `Wylosowałeś restaurację: <strong>${message}</strong>`;
+        wynikTekst.innerHTML = `wylosowałeś restaurację: <strong>${message}</strong>`;
 
         obrazek.classList.remove("animacja-kola");
     }, 2000) }
