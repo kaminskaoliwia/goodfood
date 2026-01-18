@@ -51,6 +51,12 @@ h2 {
     border-radius: 10px;
 }
 
+.kolo-container img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
 .triangle-container {
     display: flex;
     justify-content: center;
